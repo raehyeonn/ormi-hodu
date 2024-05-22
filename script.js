@@ -14,9 +14,9 @@ pageUp.addEventListener("click", function() {
 
 
 
-const openBtn = document.querySelector(".sub");
+const openBtn = document.querySelector(".button-modalopening");
 const modal = document.querySelector(".modal");
-const closeBtn = document.querySelector(".closeModal");
+const closeBtn = document.querySelector(".modal__button-closing");
 
 openBtn.addEventListener("click", function() {
     modal.style.display = "block";

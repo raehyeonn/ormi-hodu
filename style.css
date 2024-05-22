@@ -12,6 +12,8 @@
     src: url("font/Pretendard-Bold.otf") format("opentype");
 }
 
+/* ----------------------------- */
+
 * {
     padding: 0;
     margin: 0;
@@ -19,24 +21,27 @@
 }
 
 body {
-    min-width: 1280px;
+    min-width: 1280px; /* 브라우저가 줄어들어도 body의 너비는 min-width 값 이하로 줄어들지 않는다. */
 }
 
-/* header, main, footer 세 개를 하나로 감싸는 div */
 .wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
 .bar {
     display: flex;
     align-items: center;
-    background-color: #F2E9D8;
 
     width: 1920px;
-    padding: 26px 320px; /* 위, 아래 패딩을 주어 전체 102px 만듦 */
+    padding: 26px 320px;
+    background-color: #F2E9D8;
+}
+
+.barLeft {
+    height: 40px;
+    margin-right: auto;
 }
 
 .barRight {
@@ -44,56 +49,44 @@ body {
     align-items: center;
 }
 
-header ul {
-    display: flex;
-    width: 205px;
-    justify-content: space-between;
-}
-
-.menu {
+.barMenu {
     padding: 0 49px;
 }
 
-/* Home, About, Support 점 제거 */
-header li{
-    list-style: none;
+.barMenuList {
+    display: flex;
+    justify-content: space-between;
+
+    width: 205px;
 }
 
-/* 링크 이동 */
-header a{
+.barMenuItem {
+    list-style: none;
+
     font-family: "Pretendard-Medium", sans-serif;
     font-size: 16px;
+}
+
+.barMenuItem a:link, .barMenuItem a:visited {
+    color: black;
     text-decoration-line: none;
 }
-/* 헤더 호두 로고 */
-header img {
-    height: 40px;
-    margin-right: auto;
-}
 
-/* Download 버튼 디자인 */
-.download {
+.barDownloadButton {
     width: 140px;
     height: 50px;
-    border: none;
+    border: 0;
     border-radius: 40px;
-
     background-color: #D97652;
-    color: white;
 
     font-family: "Pretendard-Medium", sans-serif;
     font-size: 16px;
+    color: white;
     line-height: 20px;
 }
 
-/* 하이퍼 링크 색상 설정 */
-a:link, a:visited {
-    color: black;
-}
-
-
-
 /* ----------------------------- */
+
 main {
     display: flex;
     flex-direction: column;
@@ -102,6 +95,7 @@ main {
 
 .intro {
     display: flex;
+
     width: 1920px;
     height: 800px;
     padding: 0 320px;
@@ -114,113 +108,193 @@ main {
     justify-content: center;
 }
 
-.title {
+.introTitle {
+    padding-bottom: 40px;
+
     font-family: "Pretendard-Bold", sans-serif;
     font-size: 48px;
     line-height: 60px;
-    padding-bottom: 40px;
 }
 
-.subtitle {
+.introContents {
+    padding-bottom: 40px;
+
     font-family: "Pretendard-Medium", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 40px;
-}
-.intro img {
-    position: relative;
-    width: 415px;
-    height: 766px;
-    margin-left: auto;
-    top: 30px;
 }
 
+.introDownloadButton {
+    width: 140px;
+    height: 50px;
+    border: 0;
+    border-radius: 40px;
+    background-color: #D97652;
+
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+}
+
+.introRight {
+    position: relative;
+    top: 34px;
+
+    width: 415px;
+    height: 766px;
+    border: 0;
+    margin-left: auto;
+}
+
+/* ----------------------------- */
 
 .information {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 1920px;
-    padding: 80px 320px;
+    padding: 80px 320px 0 320px;
 }
 
-.title2 {
+.informationLeft {
+    width: 660px;
+    height: 390px;
+    border: 0;
+    border-radius: 30px;
+}
+
+.informationRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.informationTitle {
+    padding-bottom: 30px;
+
     font-family: "Pretendard-Bold", sans-serif;
     font-size: 36px;
     line-height: 45px;
-    padding-bottom: 30px;
 }
 
-.subtitle2 {
+.informationContents {
     font-family: "Pretendard-Medium", sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
 
-.information2 {
+/* ----------------------------- */
+
+.photo {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 1920px;
-    padding: 40px 320px;
+    padding: 120px 320px 0 320px;
 }
 
-.title3 {
-    font-family: "Pretendard-Bold", sans-serif;
-    color: #D97652;
-    font-size: 48px;
-    line-height: 60px;
+.photoIntroduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoTitle {
     padding-bottom: 40px;
+
+    font-family: "Pretendard-Bold", sans-serif;
+    font-size: 48px;
+    color: #D97652;
+    line-height: 60px;
 }
 
-strong {
-    color: #D97652;
-}
-.subtitle3 {
-    text-align: center;
+.photoContents {
+    padding-bottom: 88px;
+
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
 }
 
-.photo {
+.photoContents strong {
+    color: #D97652;
+}
+
+.photoWall {
+    display: flex;
+    justify-content: space-between;
+
     width: 1280px;
-    height: 832px;
-    background-color: red;
+    padding-bottom: 72px;
+}
+
+.photoWall img {
+    width: 378px;
+    height: 378px;
+    border: 0;
+    border-radius: 30px;
 }
 
 .explore {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1920px;
-    padding: 100px 320px 80px 320px;
+
+    padding-top: 28px;
+    padding-bottom: 80px;
 }
-.explore p {
+
+.exploreGuide {
+    padding-bottom: 28px;
+
+    font-family: "Pretendard-Bold", sans-serif;
     font-size: 24px;
     line-height: 30px;
-    padding-bottom: 28px;
 }
-.explore button {
+
+.exploreButton {
     width: 143px;
     height: 50px;
     border: 0;
     border-radius: 40px;
-
     background-color: #D97652;
+
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 16px;
     color: white;
+    line-height: 20px;
 }
+
+/* ----------------------------- */
 
 hr {
     border: solid 1px #C4C4C4;
     width: 1280px;
 }
 
+/* ----------------------------- */
+
 .map {
     display: flex;
     flex-direction: column;
     width: 1920px;
-    padding: 0 320px 181px 320px;
+    padding: 68px 320px 181px 320px;
 }
 
+.mapTitle {
+    font-family: "Pretendard-Bold", sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+
+.mapAddress {
+    font-family: "Pretendard-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 48px;
+}
 
 .map div {
     width: 1280px;
@@ -228,20 +302,7 @@ hr {
     background-color: red;
 }
 
-.title4 {
-    font-family: "Pretendard-Bold", sans-serif;
-    font-size: 36px;
-    line-height: 45px;
-    padding-top: 68px;
-    padding-bottom: 20px;
-}
-
-.address {
-    font-family: "Pretendard-Medium", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    padding-bottom: 48px;
-}
+/* ----------------------------- */
 
 .subscribe {
     display: flex;
@@ -264,14 +325,14 @@ hr {
 }
 
 
-.mail {
+.subscribeMailIcon {
     position: absolute;
     z-index: 10;
     top: 18px;
     left: 28px;
 }
 
-.email {
+.subscribeInputEmail {
     width: 530px;
     height: 60px;
     border: 0;
@@ -279,7 +340,7 @@ hr {
     text-align: center;
 }
 
-.sub {
+.subscribeSubmitButton {
     position: absolute;
     top: 5px;
     right: 6px;
@@ -303,14 +364,14 @@ hr {
     line-height: 45px;
 }
 
-.subscribeExplain {
+.subscribeContents {
     font-family: "Pretendard-Medium", sans-serif;
     font-size: 14px;
     color: white;
     line-height: 18px;
 }
 
-.inputEmail {
+.subscribeInformation {
     position: relative;
 }
 
@@ -402,22 +463,4 @@ footer nav {
     font-size: 16px;
     color: white;
     line-height: 20px;
-}
-
-.photo {
-    display: flex;
-    flex-direction: column;
-}
-
-.wall {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 72px;
-}
-
-.photo img {
-    width: 378px;
-    height: 378px;
-    border: 0;
-    border-radius: 30px;
 }

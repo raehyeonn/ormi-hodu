@@ -4,92 +4,93 @@
     <meta charset="UTF-8">
     <title>HODU | 호두의 매력에 빠질 시간</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
+
 </head>
 <body>
     <div class="wrap">
         <header class="bar">
-            <img src="image/hoduLogo_header.svg" alt="">
+            <img src="image/hoduLogo_header.svg" alt="" class="barLeft">
             <section class="barRight">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Support</a></li>
+                <nav class="barMenu">
+                    <ul class="barMenuList">
+                        <li class="barMenuItem"><a href="">Home</a></li>
+                        <li class="barMenuItem"><a href="">About</a></li>
+                        <li class="barMenuItem"><a href="">Support</a></li>
                     </ul>
                 </nav>
-                <input type="button" value="Download" class="download">
+                <input type="button" value="Download" class="barDownloadButton">
             </section>
         </header>
-
 
         <main>
             <section class="intro">
                 <section class="introLeft">
-                    <p class="title">
+                    <p class="introTitle">
                         Lorem Ipsum is simply<br>
                         dummy text of the printing and
                     </p>
-                    <p class="subtitle">
+                    <p class="introContents">
                         Lorem Ipsum is simply dummy text of the printing and<br>
                         typesetting industry.<br>
                         Lorem Ipsum has been the industry's standard dummy text<br>
                         ever since the 1500s, when an unknown
                     </p>
-                    <input type="button" value="Download" class="download">
+                    <input type="button" value="Download" class="introDownloadButton">
                 </section>
-                <img src="image/box.svg" alt="골판지 상자를 머리에 뒤집어쓰고 앉아있는 호두">
+                <img src="image/box.svg" alt="골판지 상자를 머리에 뒤집어쓰고 앉아있는 호두" class="introRight">
             </section>
 
             <section class="information">
-                <img src="image/img_4.png" alt="체크무늬 이불 위에 옆으로 누워있는 호두">
-                <div>
-                    <p class="title2">
+                <img src="image/bed_cat.png" alt="체크무늬 이불 위에 옆으로 누워있는 호두" class="informationLeft">
+                <div class="informationRight">
+                    <p class="informationTitle">
                         Lorem Ipsum is simply<br>
                         dummy text of the printing<br>
                         and dummy text
                     </p>
-                    <p class="subtitle2">
+                    <p class="informationContents">
                         Lorem Ipsum is simply dummy text of the printing and typesetting<br>
                         industry.
                     </p>
                 </div>
             </section>
 
-            <section class="information2">
-                <p class="title3">dummy text of the printing and dummy</p>
-                <p class="subtitle3">Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-            </section>
-
             <section class="photo">
+                <section class="photoIntroduction">
+                    <p class="photoTitle">
+                        dummy text of the printing and dummy
+                    </p>
+                    <p class="photoContents">
+                        Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    </p>
+                </section>
 
-                <div class="wall">
+                <div class="photoWall">
                     <img src="image/catimg_1.png" alt="">
                     <img src="image/catimg_2.png" alt="">
                     <img src="image/catimg_3.png" alt="">
                 </div>
-                <div class="wall">
+
+                <div class="photoWall">
                     <img src="image/catimg_4.png" alt="">
                     <img src="image/catimg_5.png" alt="">
                     <img src="image/catimg_6.png" alt="">
                 </div>
 
-            </section>
-
-            <section class="explore">
-                <p class="guide">Continue exploring HODU</p>
-                <button class="explore__button">Show more</button>
+                <section class="explore">
+                    <p class="exploreGuide">Continue exploring HODU</p>
+                    <button class="exploreButton">Show more</button>
+                </section>
             </section>
 
             <hr>
 
             <section class="map">
-                <p class="title4">Where you’ll be</p>
-                <p class="address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-                <div>
-
-                </div>
+                <p class="mapTitle">Where you’ll be</p>
+                <p class="mapAddress">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+                <div class="mapAPI"></div>
             </section>
 
             <section class="banner">
@@ -101,15 +102,19 @@
                 <section class="subscribe">
                     <div>
                         <section>
-                            <p class="subscribeTitle">Subscribe to our Blog post</p>
-                            <p class="subscribeExplain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                                Lorem Ipsum has been the industry's standard dummy text </p>
+                            <p class="subscribeTitle">
+                                Subscribe to our Blog post
+                            </p>
+                            <p class="subscribeContents">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                                Lorem Ipsum has been the industry's standard dummy text
+                            </p>
                         </section>
 
-                        <section class="input-email">
-                            <img src="image/icon_mail.svg" alt="" class="mail">
-                            <label><input type="email" placeholder="Enter your e-mail address" class="email"></label>
-                            <button class="button-modalopening">Subscribe</button>
+                        <section class="subscribeInformation">
+                            <img src="image/icon_mail.svg" alt="" class="subscribeMailIcon">
+                            <label><input type="email" placeholder="Enter your e-mail address" class="subscribeInputEmail"></label>
+                            <button class="subscribeSubmitButton">Subscribe</button>
                         </section>
                     </div>
                 </section>
@@ -135,5 +140,6 @@
             </nav>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
