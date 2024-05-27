@@ -2,14 +2,14 @@
     font-family: 'Pretendard-Medium'; /* 적용하고자 하는 폰트 이름 */
     font-style: normal; /* 폰트의 기본 스타일 (선택사항) */
     /* url("해당 폰트 파일 위치") format(ttf면 "truetype", otf면 "opentype") */
-    src: url("../font/Pretendard-Medium.otf") format("opentype");
+    src: url("font/Pretendard-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'Pretendard-Bold'; /* 적용하고자 하는 폰트 이름 */
     font-style: normal; /* 폰트의 기본 스타일 (선택사항) */
     /* url("해당 폰트 파일 위치") format(ttf면 "truetype", otf면 "opentype") */
-    src: url("../font/Pretendard-Bold.otf") format("opentype");
+    src: url("font/Pretendard-Bold.otf") format("opentype");
 }
 
 body {
