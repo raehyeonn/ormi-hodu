@@ -3,143 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <title>HODU | 호두의 매력에 빠질 시간</title>
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kakaoMapsAPI.css">
 </head>
 <body>
-    <div class="wrap">
-        <header class="bar">
-            <img src="image/hoduLogo_header.svg" alt="" class="barLeft">
-            <section class="barRight">
-                <nav class="barMenu">
-                    <ul class="barMenuList">
-                        <li class="barMenuItem"><a href="">Home</a></li>
-                        <li class="barMenuItem"><a href="">About</a></li>
-                        <li class="barMenuItem"><a href="">Support</a></li>
-                    </ul>
-                </nav>
-                <input type="button" value="Download" class="barDownloadButton">
-            </section>
-        </header>
-
-        <main>
-            <section class="intro">
-                <section class="introLeft">
-                    <p class="introTitle">
-                        Lorem Ipsum is simply<br>
-                        dummy text of the printing and
-                    </p>
-                    <p class="introContents">
-                        Lorem Ipsum is simply dummy text of the printing and<br>
-                        typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text<br>
-                        ever since the 1500s, when an unknown
-                    </p>
-                    <input type="button" value="Download" class="introDownloadButton">
-                </section>
-                <img src="image/box.svg" alt="골판지 상자를 머리에 뒤집어쓰고 앉아있는 호두" class="introRight">
-            </section>
-
-            <section class="information">
-                <img src="image/bed_cat.png" alt="체크무늬 이불 위에 옆으로 누워있는 호두" class="informationLeft">
-                <div class="informationRight">
-                    <p class="informationTitle">
-                        Lorem Ipsum is simply<br>
-                        dummy text of the printing<br>
-                        and dummy text
-                    </p>
-                    <p class="informationContents">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting<br>
-                        industry.
-                    </p>
-                </div>
-            </section>
-
-            <section class="photo">
-                <section class="photoIntroduction">
-                    <p class="photoTitle">
-                        dummy text of the printing and dummy
-                    </p>
-                    <p class="photoContents">
-                        Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.<br>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    </p>
-                </section>
-
-                <div class="photoWall">
-                    <img src="image/catimg_1.png" alt="">
-                    <img src="image/catimg_2.png" alt="">
-                    <img src="image/catimg_3.png" alt="">
-                </div>
-
-                <div class="photoWall">
-                    <img src="image/catimg_4.png" alt="">
-                    <img src="image/catimg_5.png" alt="">
-                    <img src="image/catimg_6.png" alt="">
-                </div>
-
-                <section class="explore">
-                    <p class="exploreGuide">Continue exploring HODU</p>
-                    <button class="exploreButton">Show more</button>
-                </section>
-            </section>
-
-            <hr>
-
-            <section class="map">
-                <p class="mapTitle">Where you’ll be</p>
-                <p class="mapAddress">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-                <div class="mapAPI"></div>
-            </section>
-
-            <section class="banner">
-                <section class="pageUp">
-                    <img src="image/banner.svg" alt="">
-                    <img src="image/icon_scrollTopButton_before.svg" alt="" class="pageUp__button">
-                </section>
-
-                <section class="subscribe">
-                    <div>
-                        <section>
-                            <p class="subscribeTitle">
-                                Subscribe to our Blog post
-                            </p>
-                            <p class="subscribeContents">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                                Lorem Ipsum has been the industry's standard dummy text
-                            </p>
-                        </section>
-
-                        <section class="subscribeInformation">
-                            <img src="image/icon_mail.svg" alt="" class="subscribeMailIcon">
-                            <label><input type="email" placeholder="Enter your e-mail address" class="subscribeInputEmail"></label>
-                            <button class="subscribeSubmitButton">Subscribe</button>
-                        </section>
-                    </div>
-                </section>
-            </section>
-
-            <section class="modal">
-                <section class="modal__window">
-                    <img src="image/modal_cat.svg" alt="">
-                    <p class="modal__title">Thank you!</p>
-                    <p class="modal__content">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                    <button class="modal__button-closing">OK! I Love HODU</button>
-                </section>
-            </section>
-        </main>
-
-        <footer>
-            <img src="image/hoduLogo_footer.svg" alt="">
-            <nav>
-                <a href="https://section.blog.naver.com/"><img src="image/icon_blog.svg" alt=""></a>
-                <a href="https://www.instagram.com/"><img src="image/icon_instagram.svg" alt=""></a>
-                <a href="https://www.facebook.com/"><img src="image/icon_facebook.svg" alt=""></a>
-                <a href="https://www.youtube.com/"><img src="image/icon_youtube.svg" alt=""></a>
+    <header class="bar" id="home">
+        <img src="image/hoduLogo_header.svg" alt="" class="barLeft">
+        <section class="barRight">
+            <nav class="barMenu">
+                <ul class="barMenuList">
+                    <li class="barMenuItem"><a href="#home">Home</a></li>
+                    <li class="barMenuItem"><a href="#about">About</a></li>
+                    <li class="barMenuItem"><a href="#support">Support</a></li>
+                </ul>
             </nav>
-        </footer>
-    </div>
-    <script src="script.js"></script>
+            <input type="button" value="Download" class="barDownloadButton">
+        </section>
+    </header>
+
+    <main>
+        <section class="intro">
+            <section class="introLeft">
+                <p class="introTitle">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing and
+                </p>
+                <p class="introContents">
+                    Lorem Ipsum is simply dummy text of the printing and<br>
+                    typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text<br>
+                    ever since the 1500s, when an unknown
+                </p>
+                <input type="button" value="Download" class="introDownloadButton">
+            </section>
+            <img src="image/box.svg" alt="골판지 상자를 머리에 뒤집어쓰고 앉아있는 호두" class="introRight">
+        </section>
+
+        <section class="information" id="about">
+            <img src="image/bed_cat.png" alt="체크무늬 이불 위에 옆으로 누워있는 호두" class="informationLeft">
+            <div class="informationRight">
+                <p class="informationTitle">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing<br>
+                    and dummy text
+                </p>
+                <p class="informationContents">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                    industry.
+                </p>
+            </div>
+        </section>
+
+        <section class="photo">
+            <section class="photoIntroduction">
+                <p class="photoTitle">
+                    dummy text of the printing and dummy
+                </p>
+                <p class="photoContents">
+                    Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                </p>
+            </section>
+
+            <div class="photoWall">
+                <img src="image/catimg_1.png" alt="" class="picture">
+                <img src="image/catimg_2.png" alt="" class="picture">
+                <img src="image/catimg_3.png" alt="" class="picture">
+            </div>
+
+            <div class="photoWall">
+                <img src="image/catimg_4.png" alt="" class="picture">
+                <img src="image/catimg_5.png" alt="" class="picture">
+                <img src="image/catimg_6.png" alt="" class="picture">
+            </div>
+
+            <section class="explore">
+                <p class="exploreGuide">Continue exploring HODU</p>
+                <button class="exploreButton">Show more</button>
+            </section>
+        </section>
+
+        <hr>
+
+        <section class="kakaoMapsAPI">
+            <section class="maps">
+                <p class="mapTitle">Where you’ll be</p>
+                <p class="mapAddress">3, Banpo-daero, Seocho-gu, Seoul, Republic of Korea</p>
+            </section>
+
+            <div id="container">
+                <div id="rvWrapper">
+                    <div id="roadview" style="width:100%;height:100%;"></div> <!-- 로드뷰를 표시할 div 입니다 -->
+                    <div id="close" title="로드뷰닫기" onclick="closeRoadview()"><span class="img"></span></div>
+                </div>
+                <div id="mapWrapper">
+                    <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
+                    <div id="roadviewControl" onclick="setRoadviewRoad()"></div>
+                </div>
+
+                <!-- 지도타입 컨트롤 div 입니다 -->
+                <div class="custom_typecontrol radius_border">
+                    <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                    <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+                </div>
+                <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+                <div class="custom_zoomcontrol radius_border">
+                    <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>
+                    <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner" id="support">
+            <img src="image/banner.svg" alt="">
+
+            <section class="subscribe">
+                <div class="subscribeWrap">
+                    <section class="subscribeLeft">
+                        <p class="subscribeTitle">
+                            Subscribe to our Blog post
+                        </p>
+                        <p class="subscribeContents">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            Lorem Ipsum has been the industry's standard dummy text
+                        </p>
+                    </section>
+
+                    <section class="subscribeRight">
+                        <img src="image/icon_mail.svg" alt="" class="subscribeMailIcon">
+                        <label><input type="email" placeholder="Enter your e-mail address" class="subscribeInputEmail"></label>
+                        <button class="subscribeSubmitButton">Subscribe</button>
+                    </section>
+                </div>
+            </section>
+
+            <img src="image/icon_scrollTopButton_before.svg" alt="" class="pageUpButton">
+        </section>
+    </main>
+
+    <section class="modal">
+        <section class="modalWindow">
+            <img src="image/modal_cat.svg" alt="" class="modalHoduImage">
+            <p class="modalTitle">Thank you!</p>
+            <p class="modalContent">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button class="modalClosingButton">OK! I Love HODU</button>
+        </section>
+    </section>
+
+    <footer>
+        <img src="image/hoduLogo_footer.svg" alt="">
+        <nav>
+            <a href="https://section.blog.naver.com/"><img src="image/icon_blog.svg" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="image/icon_instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="image/icon_facebook.svg" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="image/icon_youtube.svg" alt=""></a>
+        </nav>
+    </footer>
+
+    <script src="script/morePhoto.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=49d03f3dcc1e26ca9add5d52c4dceda0"></script>
+    <script src="script/kakaoMapsAPI.js"></script>
+    <script src="script/modal.js"></script>
+    <script src="script/pageUp.js"></script>
 </body>
 </html>
