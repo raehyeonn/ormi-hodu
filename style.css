@@ -458,7 +458,7 @@ hr {
     width: 600px;
     height: 400px;
     border-radius: 30px;
-    background-image: url("image/modal.svg");
+    background-image: url("./image/modal.svg");
 }
 
 .modalHoduImage {
